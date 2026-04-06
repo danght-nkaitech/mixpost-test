@@ -1,0 +1,1 @@
+import{S as e,a as r,b as a}from"./Subscription-CPuTnIK9.js";const S=()=>{function c(n){return n===a||n===r}function i(n){return n===a||n===r}function t(n){return n!==e}function u(n){return n===r}function o(n){return n===e}return{canChangePlan:c,canChangePayment:i,canCancel:t,isTrialing:u,isCanceled:o}};export{S as u};
