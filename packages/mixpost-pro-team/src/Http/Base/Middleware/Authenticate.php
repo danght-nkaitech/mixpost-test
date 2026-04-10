@@ -30,10 +30,14 @@ class Authenticate
 
         // TODO: Find a better way to use the custom model instance
         if (! Auth::user() instanceof User) {
-            $user = self::getUserClass()::make(Auth::user()
-                ->only('name', 'email'))
-                ->setAttribute('email_verified_at', Auth::user()->email_verified_at)
-                ->setAttribute('id', Auth::id());
+            $authUser = Auth::user();
+
+            $user = self::getUserClass()::make([
+                'name'  => $authUser->name,
+                'email' => $authUser->email,
+            ])
+            ->setAttribute('email_verified_at', $authUser->email_verified_at)
+            ->setAttribute('id', $authUser->getAuthIdentifier());
 
             Auth::setUser($user);
         }

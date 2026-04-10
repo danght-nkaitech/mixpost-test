@@ -58,7 +58,10 @@ class Impersonation
             return false;
         }
 
-        return self::getAuthGuard()->user()->isAdmin();
+        /** @var \App\Models\User $user */
+        $user = self::getAuthGuard()->user();
+
+        return $user->isAdmin();
     }
 
     public function impersonating(): bool

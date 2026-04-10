@@ -17,4 +17,12 @@ interface PaymentPlatform
     public static function formRules(): array;
 
     public static function formMessages(): array;
+
+    public function setCredentials(array $value): void;
+
+    public function setOptions(array $value): void;
+
+    public function supportTrialing(): bool;
+
+    public function supportCoupon(): bool;
 }
