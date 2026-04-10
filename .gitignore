@@ -21,3 +21,10 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+
+# Local packages — exclude generated/installed artifacts
+packages/*/node_modules/
+packages/*/.vite/
+packages/*/resources/dist/vendor/
+packages/*/resources/dist/hot
+packages/*/.env

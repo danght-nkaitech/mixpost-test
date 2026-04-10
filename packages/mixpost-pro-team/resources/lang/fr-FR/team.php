@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'add_user' => 'Ajouter un utilisateur',
+    'team' => 'Équipe',
+    'add_user_workspace' => 'Ajouter un nouvel utilisateur à cet espace de travail',
+    'edit_role_for' => 'Modifier le rôle pour',
+    'change_role' => 'Changer le rôle',
+    'can_edit_everything' => 'Peut accéder à tout et tout modifier.',
+    'edit_exceptions' => 'Peut accéder et modifier tout sauf la section de configuration.',
+    'user_attached' => 'Utilisateur attaché',
+    'attach_user' => 'Attacher l\'utilisateur',
+    'user_detached' => 'Utilisateur détaché',
+    'role_updated' => 'Rôle mis à jour',
+    'role' => 'Rôle',
+    'edit_role' => 'Modifier le rôle',
+    'edit_role_on' => ' Modifier le rôle sur',
+    'attach' => 'Attacher',
+    'attached_at' => 'Attaché à',
+    'detach_workspace' => 'Détacher l\'espace de travail',
+    'attach_workspace' => 'Attacher l\'espace de travail',
+    'detach_confirm' => 'Êtes-vous sûr de vouloir détacher <strong>:user</strong> de <strong>:workspace</strong> ?',
+    'admin' => 'Administrateur',
+    'member' => 'Membre',
+    'can_approve' => 'Peut approuver',
+    'viewer' => 'Lecteur',
+    'viewer_access' => 'Peut accéder à tout sauf à la section de configuration, mais ne peut pas modifier ou programmer des publications.',
+];

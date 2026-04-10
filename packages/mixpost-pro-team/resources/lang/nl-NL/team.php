@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'add_user' => 'Gebruiker toevoegen',
+    'team' => 'Team',
+    'add_user_workspace' => 'Voeg nieuwe gebruiker toe aan deze werkruimte',
+    'edit_role_for' => 'De rol bewerken voor',
+    'change_role' => 'Rol veranderen',
+    'can_edit_everything' => 'Kan alles openen en bewerken.',
+    'edit_exceptions' => 'Kan alles openen en bewerken behalve configuratie sectie.',
+    'user_attached' => 'Gebruiker aangekoppeld',
+    'attach_user' => 'Gebruiker aankoppelen',
+    'user_detached' => 'Gebruiker loskoppelen',
+    'role_updated' => 'Rol bijgewerkt',
+    'role' => 'Rol',
+    'edit_role' => 'Rol bewerken',
+    'edit_role_on' => 'Rol bewerken op',
+    'attach' => 'Bijvoegen',
+    'attached_at' => 'Bijgevoegd op',
+    'detach_workspace' => 'Werkruimte ontkoppelen',
+    'attach_workspace' => 'Voeg werkruimte toe',
+    'detach_confirm' => 'Weet u zeker dat u <strong> :workspace </strong> van <strong> :user </strong> wilt ontkoppelen?',
+    'admin' => 'Beheerder',
+    'member' => 'Lid',
+    'can_approve' => 'Kan goedkeuren',
+    'viewer' => 'Kijker',
+    'viewer_access' => 'Heeft toegang tot alles behalve de configuratie sectie, maar kan geen berichten bewerken.',
+];

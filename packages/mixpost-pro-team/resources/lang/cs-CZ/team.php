@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'add_user' => 'Přidat uživatele',
+    'team' => 'Tým',
+    'add_user_workspace' => 'Přidání nového uživatele do tohoto pracovního prostoru',
+    'edit_role_for' => 'Upravit roli pro',
+    'change_role' => 'Změna role',
+    'can_edit_everything' => 'Může přistupovat a upravovat vše.',
+    'edit_exceptions' => 'Může přistupovat a upravovat vše kromě sekce konfigurace.',
+    'user_attached' => 'Uživatel připojen',
+    'attach_user' => 'Připojit uživatele',
+    'user_detached' => 'Uživatel odpojen',
+    'role_updated' => 'Role aktualizována',
+    'role' => 'Role',
+    'edit_role' => 'Upravit roli',
+    'edit_role_on' => ' Upravit roli na',
+    'attach' => 'Připojit',
+    'attached_at' => 'Připojeno na',
+    'detach_workspace' => 'Odpojit pracovní prostor',
+    'attach_workspace' => 'Připojení pracovního prostoru',
+    'detach_confirm' => 'Jste si jisti, že chcete <strong>:workspace</strong> oddělit od <strong>:user</strong>?',
+    'admin' => 'Admin',
+    'member' => 'Člen',
+    'can_approve' => 'Může schválit',
+    'viewer' => 'Prohlížeč',
+    'viewer_access' => 'Máte přístup ke všemu kromě sekce konfigurace, ale nemůžete upravovat, plánovat příspěvky.',
+];

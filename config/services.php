@@ -35,4 +35,18 @@ return [
         ],
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Firebase Client (Web SDK) Config
+    |--------------------------------------------------------------------------
+    | Used by the frontend to initialize Firebase Auth.
+    | Get these values from Firebase Console → Project Settings → Web App.
+    */
+    'firebase_client' => [
+        'api_key' => env('FIREBASE_CLIENT_API_KEY'),
+        'auth_domain' => env('FIREBASE_CLIENT_AUTH_DOMAIN'),
+        'project_id' => env('FIREBASE_CLIENT_PROJECT_ID'),
+        'app_id' => env('FIREBASE_CLIENT_APP_ID'),
+    ],
+
 ];

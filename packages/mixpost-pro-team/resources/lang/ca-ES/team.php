@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'add_user' => 'Afegeix usuari',
+    'team' => 'Equip',
+    'add_user_workspace' => 'Afegeix un usuari nou a aquest espai de treball',
+    'edit_role_for' => 'Edita el rol per',
+    'change_role' => 'Canviar el rol',
+    'can_edit_everything' => 'Pot accedir i editar-ho tot.',
+    'edit_exceptions' => 'Pot accedir i editar-ho tot excepte la secció de configuració.',
+    'user_attached' => 'Usuari adjunt',
+    'attach_user' => 'Adjuntar usuari',
+    'user_detached' => 'Usuari desvinculat',
+    'role_updated' => 'Rol actualitzat',
+    'role' => 'Rol',
+    'edit_role' => 'Edita el rol',
+    'edit_role_on' => ' Edita el rol activat',
+    'attach' => 'Adjuntar',
+    'attached_at' => 'Adjunt a',
+    'detach_workspace' => 'Separa l\'espai de treball',
+    'attach_workspace' => 'Adjunta l\'espai de treball',
+    'detach_confirm' => 'Esteu segur que voleu separar <strong>:workspace</strong> de <strong>:user</strong>?',
+    'admin' => 'Admin',
+    'member' => 'Membre',
+    'can_approve' => 'Pot aprovar',
+    'viewer' => 'Visor',
+    'viewer_access' => 'Pot accedir a tot excepte a la secció de configuració, però no pot editar, programar publicacions.',
+];

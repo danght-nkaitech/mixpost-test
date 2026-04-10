@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'add_user' => 'Benutzer hinzufügen',
+    'team' => 'Team',
+    'add_user_workspace' => 'Neuen Benutzer zu diesem Arbeitsbereich hinzufügen',
+    'edit_role_for' => 'Rolle bearbeiten für',
+    'change_role' => 'Rolle ändern',
+    'can_edit_everything' => 'Kann auf alles zugreifen und alles bearbeiten.',
+    'edit_exceptions' => 'Kann auf alles zugreifen und alles bearbeiten, außer den Konfigurationsbereich.',
+    'user_attached' => 'Benutzer angehängt',
+    'attach_user' => 'Benutzer anhängen',
+    'user_detached' => 'Benutzer losgelöst',
+    'role_updated' => 'Rolle aktualisiert',
+    'role' => 'Rolle',
+    'edit_role' => 'Rolle bearbeiten',
+    'edit_role_on' => ' Rolle bearbeiten auf',
+    'attach' => 'anhängen.',
+    'attached_at' => 'Angeschlossen an',
+    'detach_workspace' => 'Arbeitsbereich abtrennen',
+    'attach_workspace' => 'Arbeitsbereich anhängen',
+    'detach_confirm' => 'Bist du sicher, dass du <strong>:workspace</strong> von <strong>:user</strong> abtrennen willst?',
+    'admin' => 'Admin',
+    'member' => 'Mitglied',
+    'can_approve' => 'Kann genehmigen',
+    'viewer' => 'Betrachter',
+    'viewer_access' => 'Kann auf alles außer dem Konfigurationsbereich zugreifen, kann aber keine Beiträge bearbeiten oder planen.',
+];

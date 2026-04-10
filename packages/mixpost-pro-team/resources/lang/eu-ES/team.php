@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'add_user' => 'Gehitu erabiltzailea',
+    'team' => 'Taldea',
+    'add_user_workspace' => 'Gehitu erabiltzaile berria lan-eremu honetara',
+    'edit_role_for' => 'Editatu rola',
+    'change_role' => 'Rola aldatu',
+    'can_edit_everything' => 'Guztia atzitu eta edita dezake.',
+    'edit_exceptions' => 'Guztia atzitu eta edita dezake konfigurazio atala izan ezik.',
+    'user_attached' => 'Erabiltzailea erantsita',
+    'attach_user' => 'Erantsi erabiltzailea',
+    'user_detached' => 'Erabiltzailea deserantsi da',
+    'role_updated' => 'Rola eguneratu da',
+    'role' => 'Rola',
+    'edit_role' => 'Editatu rola',
+    'edit_role_on' => ' Editatu rola ',
+    'attach' => 'Erantsi',
+    'attached_at' => 'Erantsia',
+    'detach_workspace' => 'Laneko eremua kendu',
+    'attach_workspace' => 'Erantsi lan-eremua',
+    'detach_confirm' => 'Ziur <strong>:workspace</strong> <strong>:user</strong>tik kendu nahi duzula?',
+    'admin' => 'Kudeatzailea',
+    'member' => 'Kidea',
+    'can_approve' => 'Onar dezake',
+    'viewer' => 'Ikuslea',
+    'viewer_access' => 'Guztia atzi dezake konfigurazio atalean izan ezik, baina ezin du editatu, argitalpenak programatu.',
+];

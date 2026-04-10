@@ -1,0 +1,88 @@
+{
+  "name": "inovector/mixpost-enterprise",
+  "version": "5.3.1",
+  "description": "Self-hosted social media management software. Ideal for launching a SaaS business and managing customer subscriptions seamlessly.",
+  "keywords": [
+    "mixpost",
+    "mixpost-enterprise",
+    "social-media",
+    "saas",
+    "scheduling",
+    "laravel",
+    "inovector"
+  ],
+  "homepage": "https://mixpost.app",
+  "authors": [
+    {
+      "name": "Dima Botezatu",
+      "email": "dima@inovector.com",
+      "homepage": "https://inovector.com",
+      "role": "Developer"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.inovector.com"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "ext-fileinfo": "*",
+    "barryvdh/laravel-dompdf": "^3.0",
+    "flowframe/laravel-trend": "^0.4",
+    "illuminate/contracts": "^10.47|^11.0|^12.0",
+    "inovector/mixpost-pro-team": "^4.8",
+    "league/commonmark": "^2.4",
+    "spatie/laravel-package-tools": "^1.14",
+    "stripe/stripe-php": "^13.0"
+  },
+  "require-dev": {
+    "laradumps/laradumps": "^4.0",
+    "larastan/larastan": "^3.0",
+    "laravel/pint": "^1.24",
+    "nunomaduro/collision": "^8.1",
+    "orchestra/testbench": "^9.2|^10.0",
+    "pestphp/pest": "^2.34|^3.0",
+    "pestphp/pest-plugin-faker": "^2.0|^3.0",
+    "pestphp/pest-plugin-laravel": "^2.0|^3.0",
+    "phpstan/extension-installer": "^1.4",
+    "phpstan/phpstan-deprecation-rules": "^2.0",
+    "phpstan/phpstan-phpunit": "^2.0",
+    "phpunit/phpunit": "^10.5|^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Inovector\\MixpostEnterprise\\": "src",
+      "Inovector\\MixpostEnterprise\\Database\\Factories\\": "database/factories"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Inovector\\MixpostEnterprise\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "analyse": "vendor/bin/phpstan analyse",
+    "test": "vendor/bin/pest",
+    "test-coverage": "vendor/bin/pest --coverage",
+    "format": "vendor/bin/pint"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true,
+      "phpstan/extension-installer": true,
+      "php-http/discovery": true
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Inovector\\MixpostEnterprise\\MixpostEnterpriseServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

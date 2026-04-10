@@ -7,13 +7,19 @@
     "license": "MIT",
     "repositories": [
         {
-            "type": "composer",
-            "url": "https://packages.inovector.com"
+            "type": "path",
+            "url": "packages/*",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
         "php": "^8.2",
-        "inovector/mixpost-enterprise": "^5.0",
+        "inovector/mixpost-enterprise": "5.3.1",
+        "inovector/mixpost-pro-team": "4.8.0",
+        "inovector/twitteroauth": "7.1.0",
+        "kreait/laravel-firebase": "^7.1",
         "laravel/framework": "^11.31",
         "laravel/horizon": "^5.45",
         "laravel/tinker": "^2.9"
