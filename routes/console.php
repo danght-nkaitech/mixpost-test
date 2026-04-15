@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Schedule;
+use Illuminate\Support\Facades\Schema;
 
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
@@ -10,4 +11,7 @@ Artisan::command('inspire', function () {
 
 Schedule::command('horizon:snapshot')->everyFiveMinutes();
 Schedule::command('queue:prune-batches')->daily();
-\Inovector\MixpostEnterprise\Schedule::register(Schedule::getFacadeRoot());
+
+if (Schema::hasTable('mixpost_workspaces')) {
+    \Inovector\MixpostEnterprise\Schedule::register(Schedule::getFacadeRoot());
+}

@@ -28,6 +28,8 @@ abstract class User extends Authenticatable implements HasLocalePreference
         'name',
         'email',
         'password',
+        'firebase_uid',
+        'firebase_linked_at',
     ];
 
     protected $hidden = [
@@ -36,7 +38,8 @@ abstract class User extends Authenticatable implements HasLocalePreference
     ];
 
     protected $casts = [
-        'email_verified_at' => 'datetime',
+        'email_verified_at'  => 'datetime',
+        'firebase_linked_at' => 'datetime',
     ];
 
     public function preferredLocale(): string

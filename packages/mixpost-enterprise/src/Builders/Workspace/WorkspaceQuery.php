@@ -2,7 +2,7 @@
 
 namespace Inovector\MixpostEnterprise\Builders\Workspace;
 
-use Illuminate\Contracts\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Inovector\Mixpost\Contracts\Query;
 use Inovector\MixpostEnterprise\Builders\Workspace\Filters\AccessStatus;

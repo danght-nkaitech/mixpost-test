@@ -21,6 +21,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'firebase_uid',
+        'firebase_linked_at',
     ];
 
     /**
@@ -41,8 +43,9 @@ class User extends Authenticatable
     protected function casts(): array
     {
         return [
-            'email_verified_at' => 'datetime',
-            'password' => 'hashed',
+            'email_verified_at'  => 'datetime',
+            'firebase_linked_at' => 'datetime',
+            'password'           => 'hashed',
         ];
     }
 }

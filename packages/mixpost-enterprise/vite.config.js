@@ -71,9 +71,9 @@ export default defineConfig(({command, mode}) => {
         ],
         resolve: {
             alias: {
-                '@mRs': '/vendor/inovector/mixpost-pro-team/resources',
-                '@mJs': '/vendor/inovector/mixpost-pro-team/resources/js',
-                '@mCss': '/vendor/inovector/mixpost-pro-team/resources/css',
+                '@mRs': path.resolve(__dirname, '../mixpost-pro-team/resources'),
+                '@mJs': path.resolve(__dirname, '../mixpost-pro-team/resources/js'),
+                '@mCss': path.resolve(__dirname, '../mixpost-pro-team/resources/css'),
                 '@': path.resolve(__dirname, 'resources/js'),
                 '@css': path.resolve(__dirname, 'resources/css'),
                 '@img': path.resolve(__dirname, 'resources/img'),

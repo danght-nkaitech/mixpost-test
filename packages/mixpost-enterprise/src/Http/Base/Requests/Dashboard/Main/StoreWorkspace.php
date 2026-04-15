@@ -10,6 +10,7 @@ use Inovector\Mixpost\Enums\WorkspaceUserRole;
 use Inovector\Mixpost\Rules\HexRule;
 use Inovector\MixpostEnterprise\Events\Workspace\WorkspaceCreated;
 use Inovector\MixpostEnterprise\Models\Workspace;
+use Inovector\MixpostEnterprise\Enums\WorkspaceAccessStatus;
 
 class StoreWorkspace extends FormRequest
 {
@@ -17,7 +18,7 @@ class StoreWorkspace extends FormRequest
     {
         return [
             'name' => ['required', 'string', 'max:60'],
-            'hex_color' => ['required', new HexRule],
+            'hex_color' => ['required', new HexRule]
         ];
     }
 
@@ -27,6 +28,7 @@ class StoreWorkspace extends FormRequest
             $record = Workspace::create([
                 'name' => $this->input('name'),
                 'hex_color' => Str::after($this->input('hex_color'), '#'),
+                'access_status' => WorkspaceAccessStatus::UNLIMITED,
             ]);
 
             $record->attachUser(

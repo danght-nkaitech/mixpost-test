@@ -3,7 +3,7 @@ import { computed, inject, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { Head, useForm } from '@inertiajs/vue3'
 import { cloneDeep, random } from 'lodash'
-import { ACCESS_STATUS_SUBSCRIPTION } from '@/Constants/Workspace.js'
+import { ACCESS_STATUS_UNLIMITED } from '@/Constants/Workspace.js'
 import usePageMode from '@/Composables/usePageMode'
 import useNotifications from '@/Composables/useNotifications'
 import PageHeader from '@/Components/DataDisplay/PageHeader.vue'
@@ -67,7 +67,7 @@ const form = useForm(
     : {
         name: '',
         hex_color: '',
-        access_status: ACCESS_STATUS_SUBSCRIPTION
+        access_status: ACCESS_STATUS_UNLIMITED
       }
 )
 

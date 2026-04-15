@@ -1,1 +1,0 @@
-import{c as t,a as r,aa as n,D as s}from"./app-D0r2Uohp.js";const c={__name:"LabelSuffix",props:{danger:{type:Boolean,default:!1}},setup(a){return(e,l)=>(r(),t("span",{class:s([{"text-red-500":a.danger,"text-gray-500":!a.danger},"font-normal"])},[n(e.$slots,"default")],2))}};export{c as _};

@@ -49,4 +49,8 @@ return [
         'app_id' => env('FIREBASE_CLIENT_APP_ID'),
     ],
 
+    'xroid' => [
+        'url' => env('XROID_API_URL'),
+    ],
+
 ];
