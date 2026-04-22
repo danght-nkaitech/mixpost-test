@@ -1,0 +1,1 @@
+import{B as t,c as o,o as s,A as c}from"./app-BBZa76WE.js";const n={},r={class:"text-lg font-medium"};function a(e,l){return s(),o("div",r,[c(e.$slots,"default")])}const i=t(n,[["render",a]]);export{i as S};

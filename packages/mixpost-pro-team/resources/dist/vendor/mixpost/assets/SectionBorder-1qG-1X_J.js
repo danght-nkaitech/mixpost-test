@@ -1,0 +1,1 @@
+import{c as o,o as a,e as s,I as t}from"./app-BBZa76WE.js";const r={class:"hidden sm:block"},c={class:"py-lg"},i={__name:"SectionBorder",props:{contrasted:{type:Boolean,default:!1}},setup(e){return(n,d)=>(a(),o("div",r,[s("div",c,[s("div",{class:t(["border-t",{"border-gray-100":!e.contrasted,"border-gray-200":e.contrasted}])},null,2)])]))}};export{i as _};

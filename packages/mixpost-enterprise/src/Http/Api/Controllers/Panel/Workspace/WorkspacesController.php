@@ -29,6 +29,22 @@ class WorkspacesController extends Controller
         return WorkspaceResource::collection($workspaces);
     }
 
+    public function findByEmail(Request $request): JsonResponse
+    {
+        $request->validate([
+            'email' => ['required', 'email'],
+        ]);
+
+        $workspaces = WorkspaceQuery::apply($request)
+            ->with(['owner'])
+            ->latest()
+            ->get();
+
+        return response()->json([
+            'data' => new WorkspaceResource($workspaces->first()),
+        ]);
+    }
+
     public function store(StoreWorkspace $storeWorkspace): WorkspaceResource
     {
         return new WorkspaceResource(

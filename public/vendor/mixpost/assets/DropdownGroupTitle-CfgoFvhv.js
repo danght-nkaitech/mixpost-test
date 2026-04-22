@@ -1,0 +1,1 @@
+import{B as t,c as o,o as s,A as r}from"./app-hR8CbzbA.js";const c={},n={class:"text-gray-500 text-sm font-medium p-sm"};function a(e,_){return s(),o("div",n,[r(e.$slots,"default")])}const l=t(c,[["render",a]]);export{l as D};

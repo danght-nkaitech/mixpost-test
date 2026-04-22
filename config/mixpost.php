@@ -13,6 +13,12 @@ return [
     'core_path' => env('MIXPOST_CORE_PATH', 'mixpost'),
 
     /*
+     * Secret key dùng để hệ thống ngoài gọi API tạo access token.
+     * Đặt giá trị này vào .env: MIXPOST_TOKEN_ISSUE_SECRET=your_secret_here
+     */
+    'token_issue_secret' => env('MIXPOST_TOKEN_ISSUE_SECRET'),
+
+    /*
      * This option will force the callback url to use the native `mixpost` core path.
      * If you want to use custom core path, for the dashboard, but you want to use the native `mixpost` core path for the callback url,
      */

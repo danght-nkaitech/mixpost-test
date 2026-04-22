@@ -20,6 +20,7 @@ use Inovector\MixpostEnterprise\Http\Api\Middleware\Admin;
 Route::prefix('panel')->name('panel.')->middleware([Admin::class])->group(function () {
     Route::prefix('workspaces')->name('workspaces.')->group(function () {
         Route::get('/', [WorkspacesController::class, 'index'])->name('index');
+        Route::get('find-by-email', [WorkspacesController::class, 'findByEmail'])->name('findByEmail');
         Route::post('/', [WorkspacesController::class, 'store'])->name('store');
         Route::get('{workspace}', [WorkspacesController::class, 'show'])->name('show');
         Route::put('{workspace}', [WorkspacesController::class, 'update'])->name('update');

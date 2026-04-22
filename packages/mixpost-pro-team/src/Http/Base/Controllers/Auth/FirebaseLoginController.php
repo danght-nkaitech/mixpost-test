@@ -40,7 +40,7 @@ class FirebaseLoginController extends Controller
 
         Log::info('Firebase token verified', ['firebase_uid' => $firebaseUid, 'email' => $email]);
 
-        if (!$email) {
+        if (! $email) {
             return redirect()->route('mixpost.login')->withErrors([
                 'email' => __('Your account has no email address associated.'),
             ]);
@@ -53,8 +53,8 @@ class FirebaseLoginController extends Controller
             ?? $userClass::where('email', $email)->first();
 
         // Admin accounts bypass the Xroid check entirely
-        if (!$user || !$user->isAdmin()) {
-            if (!$this->existsInXroid($request->input('id_token'))) {
+        if (! $user || ! $user->isAdmin()) {
+            if (! $this->existsInXroid($request->input('id_token'))) {
                 Log::warning('Firebase login rejected — Xroid check failed', ['email' => $email]);
 
                 return redirect()->route('mixpost.login')->withErrors([
@@ -62,7 +62,7 @@ class FirebaseLoginController extends Controller
                 ]);
             }
 
-            if (!$user) {
+            if (! $user) {
                 // Exists in Xroid but not locally — create the account
                 $name = $claims->get('name') ?? explode('@', $email)[0];
 
@@ -102,7 +102,7 @@ class FirebaseLoginController extends Controller
     {
         $url = config('services.xroid.url');
 
-        if (!$url) {
+        if (! $url) {
             Log::warning('Xroid API not configured — blocking unrecognized user');
             return false;
         }

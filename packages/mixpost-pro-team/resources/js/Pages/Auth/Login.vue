@@ -84,15 +84,9 @@ const submit = async () => {
       postFirebaseToken(idToken)
       return
     } catch (err) {
-      // Firebase auth failed — fall back to native Mixpost auth
+      firebaseError.value = 'Invalid email or password. Please try again.'
     }
   }
-
-  form.post(route('mixpost.login'), {
-    onSuccess() {
-      afterFirebaseLogin()
-    }
-  })
 }
 
 const loginWithGoogle = async () => {

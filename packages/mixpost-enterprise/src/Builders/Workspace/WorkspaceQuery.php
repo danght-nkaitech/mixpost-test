@@ -38,6 +38,10 @@ class WorkspaceQuery implements Query
             $query = Exclude::apply($query, $request->get('exclude', []));
         }
 
+        if ($request->has('email') && $request->get('email')) {
+            $query->whereHas('owner', fn ($u) => $u->where('email', $request->get('email')));
+        }
+
         return $query;
     }
 }

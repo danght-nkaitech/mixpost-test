@@ -2,6 +2,7 @@
 
 namespace Inovector\MixpostEnterprise\Actions\Workspace;
 
+use Illuminate\Support\Carbon;
 use Inovector\Mixpost\Abstracts\User;
 use Inovector\Mixpost\Enums\WorkspaceUserRole;
 use Inovector\MixpostEnterprise\Models\Workspace;
@@ -11,7 +12,7 @@ class NewWorkspace
     public function __invoke(User $user): Workspace
     {
         $workspace = Workspace::create([
-            'name' => "$user->name's Team",
+            'name' => $user->name . ' ' . Carbon::now()->format('d/m/Y H:i'),
             'hex_color' => '000000',
         ]);
 
