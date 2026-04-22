@@ -1,0 +1,36 @@
+# Dependencies
+vendor/
+node_modules/
+packages/*/node_modules/
+packages/*/.vite/
+packages/*/resources/dist/vendor/
+packages/*/resources/dist/hot
+
+# Environment & secrets
+.env
+.env.backup
+.env.production
+auth.json
+
+# Git
+.git/
+.gitignore
+
+# Build artifacts
+public/build
+public/hot
+public/storage
+
+# IDE
+.idea/
+.vscode/
+.fleet/
+.nova/
+.zed/
+
+# Logs & cache
+*.log
+.phpunit.cache
+.phpunit.result.cache
+storage/*.key
+storage/pail
